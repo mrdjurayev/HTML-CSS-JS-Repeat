@@ -1,0 +1,21 @@
+header, 
+nav, 
+section, 
+article,
+aside,
+footer {
+    border: 1px solid black;
+    padding: 24px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+section, article {
+    width: 60%;
+    height: 300px;
+}
+
+aside {
+    width: 300px;
+    position: relative;
+}

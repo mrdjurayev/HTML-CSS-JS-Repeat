@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.cursorWidth": 1,
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "phase"
+}
