@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="/server.py" method="post">
+        <div class="questionnaire__container">
+            <div class="questionnaire-title">
+                <h1>Anketa</h1>
+            </div> <hr>
+            <div class="client-name">
+                <h3>Mijoz ism familiyasi:</h3>
+                <input type="text" name="username" id="username" placeholder="Ismingizni kiriting">
+                <input type="text" name="userlastname" id="userlastname" placeholder="Familiyangizni kiriting">
+            </div>
+            <div class="address">
+                <div class="addressline-1">
+                    <h3>Manzil:</h3>
+                    <input type="text" id="useraddress" placeholder="Ko'cha nomini kiriting">
+                </div>
+                <div class="addressline-2">
+                    <input type="text" id="cityname" placeholder="Shahar nomi">
+                    <input type="number" id="zipcode" placeholder="Pochta indeksi">
+                    <select name="province" id="province">
+                        <option value="0">Viloyatni tanlang</option>
+                        <option value="1">Toshkent Viloyati</option>
+                        <option value="2">Qoraqalpog'iston</option>
+                        <option value="3">Xorazm</option>
+                        <option value="4">Buxoro</option>
+                        <option value="5">Navoiy</option>
+                        <option value="6">Samarqand</option>
+                        <option value="7">Jizzax</option>
+                        <option value="8">Qashqadaryo</option>
+                        <option value="9">Surxondaryo</option>
+                        <option value="10">Sirdaryo</option>
+                        <option value="11">Namangan</option>
+                        <option value="12">Farg'ona</option>
+                        <option value="13">Andijon</option>
+                    </select>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Bog'lanish</h3>
+                <input type="number" name="number" id="phonenumber" placeholder="Telefon raqami">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="Gender-data">
+                <h3>Shaxsiy ma'lumotlar</h3>
+                <label for="male">
+                    <input type="radio" id="male" name="gender">
+                    Erkak
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender">
+                    Ayol
+                </label>
+            </div>
+            <div class="rating">
+                <h3>Baholash:</h3>
+                <div class="hotel-service">
+                    <p>Mehmonxona xizmati:</p>
+                    <label for="good">
+                        <input type="radio" id="good" name="hotel">
+                        Yaxshi
+                    </label>
+                    <label for="bad">
+                        <input type="radio" id="bad" name="hotel">
+                        Yomon
+                    </label>
+                    <label for="great">
+                        <input type="radio" id="great" name="hotel">
+                        Ajoyib
+                    </label>
+                </div>
+                <div class="staff-service">
+                    <p>Xodimlar xizmati</p>
+                    <label for="good1">
+                        <input type="radio" id="good1" name="hotel1">
+                        Yaxshi
+                    </label>
+                    <label for="bad1">
+                        <input type="radio" id="bad1" name="hotel1">
+                        Yomon
+                    </label>
+                    <label for="great1">
+                        <input type="radio" id="great1" name="hotel1">
+                        Ajoyib
+                    </label>
+                </div>
+                <div class="foods">
+                    <p>Ovqatlar:</p>
+                    <label for="good2">
+                        <input type="radio" id="good2" name="hotel2">
+                        Yaxshi
+                    </label>
+                    <label for="bad2">
+                        <input type="radio" id="bad2" name="hotel2">
+                        Yomon
+                    </label>
+                    <label for="great2">
+                        <input type="radio" id="great2" name="hotel2">
+                        Ajoyib
+                    </label>
+                </div>
+                <div class="internet-quality">
+                    <p>Internet sifati:</p>
+                    <label for="good3">
+                        <input type="radio" id="good3" name="hotel3">
+                        Yaxshi
+                    </label>
+                    <label for="bad3">
+                        <input type="radio" id="bad3" name="hotel3">
+                        Yomon
+                    </label>
+                    <label for="great3">
+                        <input type="radio" id="great3" name="hotel3">
+                        Ajoyib
+                    </label>
+                </div>
+                <div class="room-cleanliness">
+                    <p>Xonaning tozaligi:</p>
+                    <label for="good4">
+                        <input type="radio" id="good4" name="hotel4">
+                        Yaxshi
+                    </label>
+                    <label for="bad4">
+                        <input type="radio" id="bad4" name="hotel4">
+                        Yomon
+                    </label>
+                    <label for="great4">
+                        <input type="radio" id="great4" name="hotel4">
+                        Ajoyib
+                    </label>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit">Jo'natish</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
